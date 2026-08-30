@@ -1,12 +1,344 @@
 {
-    "MyTask1": {},
-    "MyTask2": {},
-    "MyTask3": {},
-    "MyTask4": {
-        "recognition": "Custom",
-        "custom_recognition": "my_reco_222",
-        "action": "Custom",
-        "custom_action": "my_action_111"
+    "$__mpe_config_新建Pipeline1": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -284,
+                "y": -105,
+                "zoom": 0.57
+            },
+            "filename": "新建Pipeline1",
+            "version": "v1.9.1"
+        }
     },
-    "OcrTask": {}
+    "主界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    696,
+                    630,
+                    533,
+                    162
+                ],
+                "expected": [
+                    "切换其他账号"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1179,
+                    461,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "滚动记录到最下方"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 941,
+                "y": 201
+            }
+        }
+    },
+    "滚动记录到最下方": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "G:\\MyMaa\\assets\\resource\\image\\登录历史记录模板.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1210,
+                    528,
+                    1,
+                    1
+                ],
+                "target_offset": [
+                    5,
+                    435,
+                    0,
+                    0
+                ]
+            }
+        },
+        "next": [
+            "点击最远账号记录"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1258,
+                "y": 193
+            }
+        }
+    },
+    "点击最远账号记录": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    806,
+                    747,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "登录"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1542,
+                "y": 199
+            }
+        }
+    },
+    "登录": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "G:\\MyMaa\\assets\\resource\\image\\登录页面模板.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    965,
+                    675,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "点击领取每日"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1552,
+                "y": 438
+            }
+        }
+    },
+    "点击领取每日": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    858,
+                    204,
+                    205,
+                    64
+                ],
+                "expected": [
+                    "今日配给"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    960,
+                    963,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "关闭公告页面",
+            "额外页面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1836,
+                "y": 208
+            }
+        }
+    },
+    "关闭公告页面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    618,
+                    157,
+                    157,
+                    55
+                ],
+                "expected": [
+                    "活动公告"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1817,
+                    107,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "回到主页面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1845,
+                "y": 487
+            }
+        }
+    },
+    "额外页面": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1841,
+                "y": 755
+            }
+        }
+    },
+    "回到主页面": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "G:\\MyMaa\\assets\\resource\\image\\主页面模板.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    76,
+                    61,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "点击退出登录"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2206,
+                "y": 241
+            }
+        }
+    },
+    "点击退出登录": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    478,
+                    523,
+                    216,
+                    88
+                ],
+                "expected": [
+                    "退出登录"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1294,
+                    561,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "确认退出登录"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2200,
+                "y": 566
+            }
+        }
+    },
+    "确认退出登录": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    656,
+                    433,
+                    621,
+                    121
+                ],
+                "expected": [
+                    "即将返回登录界面 ， 是否继续 ?"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1272,
+                    739,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "确认返回主页面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2195,
+                "y": 854
+            }
+        }
+    },
+    "确认返回主页面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    896,
+                    749,
+                    124,
+                    43
+                ],
+                "expected": [
+                    "切换其他账号"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2192,
+                "y": 1127
+            }
+        }
+    }
 }
