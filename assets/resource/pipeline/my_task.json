@@ -4,12 +4,12 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -284,
-                "y": -105,
-                "zoom": 0.57
+                "x": -427,
+                "y": -225,
+                "zoom": 0.66
             },
             "filename": "新建Pipeline1",
-            "version": "v1.9.1"
+            "version": "v1.9.2"
         }
     },
     "主界面": {
@@ -108,10 +108,16 @@
     },
     "登录": {
         "recognition": {
-            "type": "TemplateMatch",
+            "type": "OCR",
             "param": {
-                "template": [
-                    "登录页面模板.png"
+                "roi": [
+                    903,
+                    747,
+                    117,
+                    48
+                ],
+                "expected": [
+                    "切换其他账号"
                 ]
             }
         },
@@ -309,9 +315,6 @@
                 ]
             }
         },
-        "next": [
-            "确认返回主页面"
-        ],
         "$__mpe_code": {
             "position": {
                 "x": 2195,
