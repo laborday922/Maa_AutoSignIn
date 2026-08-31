@@ -53,7 +53,7 @@
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "G:\\MyMaa\\assets\\resource\\image\\登录历史记录模板.png"
+                    "登录历史记录模板.png"
                 ]
             }
         },
@@ -111,7 +111,7 @@
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "G:\\MyMaa\\assets\\resource\\image\\登录页面模板.png"
+                    "登录页面模板.png"
                 ]
             }
         },
@@ -222,7 +222,7 @@
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "G:\\MyMaa\\assets\\resource\\image\\主页面模板.png"
+                    "主页面模板.png"
                 ]
             }
         },
