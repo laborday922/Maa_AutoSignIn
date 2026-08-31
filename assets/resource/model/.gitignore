@@ -1,1 +1,4 @@
 ocr
+det.onnx
+rec.onnx
+keys.txt
